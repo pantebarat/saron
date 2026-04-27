@@ -1,0 +1,116 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: url('Senja.jpg') no-repeat center/cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* OVERLAY GELAP */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.4);
+}
+
+.logo {
+  color: gold;
+  font-size: 20px;
+}
+
+/* CONTAINER CENTER */
+.profile-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CARD */
+.profile-card {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+/* FOTO BULAT */
+.profile-circle {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  overflow: hidden;
+
+  box-shadow: 0 0 20px gold;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.role {
+  color: gold;
+  margin: 5px 0 10px;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
