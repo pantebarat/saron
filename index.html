@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saron Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">Saron</h1>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+</header>
+
+<nav class="nav" id="nav">
+  <a href="#">Home</a>
+  <a href="profile.html">Profile</a>
+  <a href="#about">Tentang</a>
+  <a href="#project">Project</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
+
+
+<!-- HERO -->
+<section class="hero-glass center">
+  <div class="center-text">
+    <p>Halo, Saya</p>
+    <h1>Saron</h1>
+    <span class="line"></span>
+    <h3>Frontend Developer & UI Designer</h3>
+
+    <p class="desc">
+      Membuat pengalaman digital yang modern, elegan, dan berfokus pada pengguna.
+    </p>
+
+    <div class="btn-group">
+      <button onclick="scrollToSection('project')">Lihat Project</button>
+      <button onclick="window.location.href='profile.html'">
+  Lihat Profile
+</button>
+    </div>
+
+    <div class="profile-circle">
+      <img src="goyounjung.png">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="glass center-text" id="about">
+  <h2>🎤 Tentang Saya</h2>
+  <p>
+    Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar dalam
+    pengembangan web dan desain antarmuka.
+  </p>
+
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="glass center-text" id="project">
+  <h2>💼 Project Saya</h2>
+
+  <div class="project-card">
+    <h3>Aplikasi Perpustakaan</h3>
+    <p>Sistem manajemen buku berbasis web menggunakan PHP & MySQL.</p>
+    <button onclick="goProfile()">Lihat Detail</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Simulasi Algoritma</h3>
+    <p>Visualisasi algoritma menggunakan Python dan Matplotlib.</p>
+    <button onclick="goProfile()">Lihat Detail</button>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="glass center-text" id="contact">
+  <h2>📩 Kontak Saya</h2>
+  <p>Silakan hubungi saya melalui email</p>
+  <div class="email-box">saron@email.com</div>
+</section>
+
+<footer>
+  © 2026 Saron - All Rights Reserved 💛
+</footer>
+<audio id="bg-music" loop>
+  <source src="perfect.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

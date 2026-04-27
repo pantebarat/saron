@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+
+/* BACKGROUND */
+body {
+  background: url('Senja.jpg') no-repeat center/cover;
+  color: white;
+}
+
+/* OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.logo {
+  color: gold;
+}
+
+/* NAV */
+.nav {
+  display: none;
+  flex-direction: column;
+  background: rgba(0,0,0,0.7);
+}
+
+.nav a {
+  color: gold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* CENTER */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* HERO */
+.hero-glass {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  flex-direction: column;
+}
+
+/* LINE */
+.line {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto;
+}
+
+/* DESC */
+.desc {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* BUTTON */
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-group button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  margin: 5px;
+  background: gold;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid gold;
+  color: gold;
+}
+
+/* PROFILE */
+.profile-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 0 15px gold;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* GLASS */
+.glass {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills span {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid gold;
+  border-radius: 10px;
+}
+
+/* PROJECT */
+.project-card {
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+/* CONTACT */
+.email-box {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid gold;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+}
+
+/* BUTTON LIHAT DETAIL (SAMA SEPERTI PROFILE) */
+.project-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.project-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px gold;
+}
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: gold;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+}
